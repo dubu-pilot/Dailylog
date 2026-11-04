@@ -1,0 +1,59 @@
+
+
+2026-11-04
+
+## 함수 정의
+
+```sh
+def 셀을 실행하면 함수가 등록. 
+이름()으로 불러야 실행
+
+def say_hello():
+    print("안녕하세요")
+
+say_hello()  # 안녕하세요
+say_hello # <function __main__.say_hello()>
+
+```
+
+## 매개변수와인수
+```sh
+매개변수는 정의할 때 받을 이름
+인수는 호출할 때 넘기는 값
+
+def introduce_self(name, age):
+    print(f"이름:{name}, 나이:{age}")
+
+introduce_self("홍길동", 25) # 이름:홍길동, 나이:25
+introduce_self(11, "홍길동") # 이름:11, 나이:홍길동
+introduce_self(name="홍길동", age =20) # 이름:홍길동, 나이:20
+```
+
+## return
+```sh
+결과를 돌려주고 함수를 그 즉시 끝냄.
+
+```
+
+## 지역변수와 전역변수
+```sh
+함수 안에서 만든 변수는 함수 안에서만 쓰이고 끝나면 사라짐.
+지역변수 : 함수 내부 출력
+전역변수 : 함수 외부 출력
+```
+
+## Lambda, map, filter
+```sh
+lambda: 한줄짜리 함수
+map: 모든 요소 변환
+filter: 참인 것만
+
+number = [1,  2, 3, 4, 5]
+print(list(map(lambda x: x+10, number)))
+# [11, 12, 13, 14, 15]
+
+number = [1,  2, 3, 4, 5]
+print(list(filter(lambda x: x%2==0, number)))
+# [2, 4]
+
+```
